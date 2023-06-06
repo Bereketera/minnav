@@ -97,48 +97,39 @@ dispaly:flex;
     color:#fff;
     transition: 0.4s ease;
 }
-.b a{
 
-    text-decoration: none;
-    color: #fff;
-    transition: .3s ease;
-}
-.b{
-    width: 200px;
+.login button{
+ width: 200px;
     font-family: sans-serif;
     text-align: center;
     color: #29140f;
     font-size: 15px;
     background-color: #29140f;
     margin: 2px;
+
     padding: 8px;
 	border:none;
-   
-}
-	
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-   
 
 }
+.login button:hover{
+    background-color:#e69c82;
+	box-shadow: 0 8px 16px 0;
+}
+
+.login button:active{
+    background-color:#e69c82;
+	box-shadow: 0 8px 16px 0;
+	width:220px;
+	height:40px;
+}
+
+.login button a{
+
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease;
+}
+
 
 .d a{
 
@@ -173,7 +164,18 @@ dispaly:flex;
 }
 .b:hover{
     background-color:#e69c82;
+	box-shadow: 0 8px 16px 0;
 }
+.b:active{
+    background-color:#e69c82;
+	box-shadow: 0 8px 16px 0;
+	width:220px;
+}
+
+
+
+
+
 .btn{
 margin:auto;
  width: 100px;
@@ -277,27 +279,50 @@ font-family: sans-serif;
 font-size:35px;
 }
 
+
+}
+.b.color{
+background-color: yellow;
+}
+button.active{
+    background-color:#e69c82;
+	}
+
 </style>
 <body>
 
 <div class="login">
-<h2>Ethiopian Coffee and Tea Authority Weekly Minimum Export Sales Price   </h2>
-<button class="b"><a href="may2329.html" target="display">23/05/2023-29/05/2023</a></button>
-<button class="b"><a href="minimum price .html" target="display">17/05/2023-24/05/2023</a></button>
-<button class="b"><a href="may0915.html" target="display">09/05/2023-15/05/2023</a></button>
-
-<button class="b"><a href="may0208.html" target="display">02/05/2023 - 8/05/2023</a></button>
-<button class="b"><a href="apr2501.html" target="display">25/04/2023 - 01/05/2023</a></button>
-<button class="b"><a href="apr1824.html" target="display">18/04/2023 - 24/04/2023</a></button>
-<button class="b"><a href="apr1117.html" target="display">11/04/2023 - 17/04/2023</a></button>
-<button class="b"><a href="apr0410.html" target="display">04/04/2023 - 10/04/2023</a></button>
-<button class="b"><a href="mar2803.html" target="display">28/03/2023 - 03/04/2023</a></button>
-<button class="b"><a href="mar2127.html" target="display">21/03/2023 - 27/03/2023k</a></button>
-<button class="b"><a href="mar1420.html" target="display">14/03/2023 - 20/03/2023</a></button>
-<button class="b"><a href="mar0713.html" target="display">07/03/2023 - 13/03/2023</a></button>
+<h2>Ethiopian Coffee And Tea Authority Weekly Minimum Export Sales Price</h2>
+<button class="active"><a href="may3006.html" target="display">30/05/2023 - 06/06/2023</a></button>
+<button ><a href="may2329.html" target="display">23/05/2023-29/05/2023</a></button>
 
 
+<button ><a href="minimum price .html" target="display">17/05/2023-24/05/2023</a></button>
+<button ><a href="may0915.html" target="display">09/05/2023-15/05/2023</a></button>
 
-
+<button><a href="may0208.html" target="display">02/05/2023 - 8/05/2023</a></button>
+<button ><a href="apr2501.html" target="display">25/04/2023 - 01/05/2023</a></button>
+<button ><a href="apr1824.html" target="display">18/04/2023 - 24/04/2023</a></button>
+<button ><a href="apr1117.html" target="display">11/04/2023 - 17/04/2023</a></button>
+<button ><a href="apr0410.html" target="display">04/04/2023 - 10/04/2023</a></button>
+<button ><a href="mar2803.html" target="display">28/03/2023 - 03/04/2023</a></button>
+<button ><a href="mar2127.html" target="display">21/03/2023 - 27/03/2023k</a></button>
+<button ><a href="mar1420.html" target="display">14/03/2023 - 20/03/2023</a></button>
+<button ><a href="mar0713.html" target="display">07/03/2023 - 13/03/2023</a></button>
                 </div>
+
+<script>
+const buttons = document.querySelectorAll('.login button');
+buttons.forEach(option => {
+option.addEventListener('click', () =>{
+document.querySelector('button.active').classList.remove('active');
+option.classList.add('active');
+
+console.log('active');
+});
+});
+
+
+
+</script>
 </body>
